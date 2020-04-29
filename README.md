@@ -1,8 +1,8 @@
 # Web-News-Project
 # Customized News Webpage
-# Yueyi Yang  yueyiyan@usc.edu
-# Jingchao Zhou jingchao@usc.edu
-# Proposal 
+### Yueyi Yang  yueyiyan@usc.edu
+### Jingchao Zhou jingchao@usc.edu
+## Proposal 
 Our purpose of creating a Customized News Website is filtering massive news from various categories and providing the information that users are really looking for. Recently, the coronavirus is spreading worldwidely. News about the coronavirus almost dominates every new web page. In this case, it is especially difficult for some certain people who read news online to find news that really interests them. For example, some users would like to read sports news other than the coronavirus or maybe some users are only concerned about the coronavirus news of their own countries. Therefore, we create our Customized News Webpage to help these people. Our project includes the following features.
 
 # Homepage
