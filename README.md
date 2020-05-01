@@ -34,22 +34,22 @@ Autosuggest will appear when some words are inputted
 ![image](https://github.com/JingchaoZhou/Web-News-Project/blob/master/Screen%20Shot%202020-04-28%20at%201.23.13%20PM.png)
 ![image](https://github.com/JingchaoZhou/Web-News-Project/blob/master/Screen%20Shot%202020-04-28%20at%201.26.18%20PM.png)
 
-## Overview of implementation
-# Frontend
+# Overview of implementation
+## Frontend
 1. Fetch data by api and display on the webpage.
 2. Store favorite news information into windows.localStorage and display them under My Favorites section.
 
-# Backend
+## Backend
 
 
-## Links
-# link to video
+# Links
+## link to video
 https://www.youtube.com/watch?v=oOPrbqfKE9Y&t=122s
 
-# link to slides
+## link to slides
 https://docs.google.com/presentation/d/1buSth_3eEQqd-O_IPFEVIwqk6lAWeQhkKtwGhdUrWmY/edit?usp=sharing
 
-## Future Work
+# Future Work
 1. Allow users to login by their social accounts
 2. Use database to store their favorite news under their own accounts
 3. Add comments and share features
