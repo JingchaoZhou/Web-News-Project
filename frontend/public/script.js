@@ -1,3 +1,4 @@
+//hind search part
 function initialize() {
   
   // Hide the search result in the beginning
@@ -14,7 +15,7 @@ function initialize() {
 }
 
 
-
+//get news from the world section
 function initializeWorld(){
     try{
     let req = new XMLHttpRequest();
@@ -43,6 +44,7 @@ function initializeWorld(){
     }
 }
 
+//get news from the sports section
 function initializeSports(){
     try{
     let req = new XMLHttpRequest();
@@ -71,6 +73,7 @@ function initializeSports(){
     }
 }
 
+//get news from the arts section
 function initializeArts(){
     try{
     let req = new XMLHttpRequest();
@@ -99,6 +102,8 @@ function initializeArts(){
     }
 }
 
+//get news from the coronavirus section
+//a different api (search) is used
 function initializeCoronavirus(){
     try{
     let req = new XMLHttpRequest();
@@ -138,6 +143,7 @@ function initializeCoronavirus(){
     }
 }
 
+//initilize favorite section and hide this part at the begining
 function initializeFavorite(){
   console.log("Initialize Favorite!")
   if(window.localStorage.getItem('favorite') == undefined || (JSON.parse(window.localStorage.getItem('favorite'))).length==0){
@@ -160,7 +166,7 @@ function initializeFavorite(){
 }
 
 
-
+// call all my initialier
 initializeWorld();
 initializeSports();
 initializeArts();
@@ -170,7 +176,7 @@ initialize();
 
 
 /***** add favorite *****/
-
+//ready for click
 document.getElementById("Favorite00").onclick = function () {
     addFavorite("Favorite00");
   };
@@ -236,7 +242,7 @@ document.getElementById("Favorite00").onclick = function () {
 
 
 
-
+//show favorite news based on local storage
 function displayFavorites(){
     try{
       console.log("display!")
@@ -271,23 +277,13 @@ function displayFavorites(){
       }
 
     }
-
-    // if(favoriteArray.length < all_news_favorite.length){
-    //     for(let i = favoriteArray.length; i < all_news_favorite.length; i++){
-    //         document.getElementById(all_news_favorite[i]).innerHTML = "No Favorite News";
-    //         document.getElementById(content_array[i]).innerHTML = "No Favorite News"
-    //         document.getElementById(date_array[i]).innerHTML = "No Favorite News";
-    //         document.images.namedItem(image_array[i]).src = "https://www.publicdomainpictures.net/pictures/30000/velka/plain-white-background.jpg";
-    //         document.getElementById(link_array[i]).href = "#";
-    //     }
-    // }
 }
 catch (error) {
     console.log("error: ", error);
 }
 }
 
-
+//add favorite news based on id
   function addFavorite(currFavorite){
       try{
     let all_news_favorite = ["Favorite00","Favorite01","Favorite02","Favorite10","Favorite11",
@@ -336,6 +332,7 @@ catch (error) {
     
   }
 
+  //remove from my favorite news based on id
   function removeFavorite(currRemove){
       try{
       let removeNews = ["Remove1","Remove2","Remove3"];
@@ -361,7 +358,7 @@ catch (error) {
 
   //window.localStorage.clear();
 
-
+//check if inputs are validate
   function inputValidation(k,f,t){
     var d = new Date();
     var temp_t = new Date(t);
@@ -373,21 +370,7 @@ catch (error) {
         return false;
     }
     if(k.length == 0) return false;
-    // console.log(d);
     d = new Date(d.getTime());
-    // console.log(d);
-
-    // var message = "You are trying to request results too far in the past. Your plan permits you to request articles as far back as "+  d.value+", but you have requested ";
-    // var mes_tail = ". To extend this please upgrade to a paid plan.";
-    // if(temp_t.getTime() < d.getTime()-30*24*60*60*1000){
-    //     alert(message+t+mes_tail);
-    //     return false;
-    // }else if(temp_f.getTime() < d.getTime()-30*24*60*60*1000){
-    //     alert(message+f+mes_tail);
-    //     return false;
-    // }
-    
-
     return true;
 }
 
