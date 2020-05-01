@@ -35,11 +35,11 @@ Autosuggest will appear when some words are inputted
 ![image](https://github.com/JingchaoZhou/Web-News-Project/blob/master/Screen%20Shot%202020-04-28%20at%201.26.18%20PM.png)
 
 # Overview of implementation
-## Frontend
+## Frontend(port:4000)
 1. Fetch data by api and display on the webpage.
 2. Store favorite news information into windows.localStorage and display them under My Favorites section.
 
-## Backend
+## Backend(port:5000)
 ![image](https://github.com/JingchaoZhou/Web-News-Project/blob/master/Screen%20Shot%202020-05-01%20at%201.44.01%20PM.png)
 
 # Links
