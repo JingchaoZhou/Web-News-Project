@@ -40,7 +40,7 @@ Autosuggest will appear when some words are inputted
 2. Store favorite news information into windows.localStorage and display them under My Favorites section.
 
 ## Backend
-
+![image](https://github.com/JingchaoZhou/Web-News-Project/blob/master/Screen%20Shot%202020-05-01%20at%201.44.01%20PM.png)
 
 # Links
 ## link to video
